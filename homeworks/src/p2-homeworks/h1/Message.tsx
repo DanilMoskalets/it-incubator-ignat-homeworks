@@ -13,11 +13,12 @@ export default function Message(props: typeMessageProp) {
 
         <div className={s.message}>
             <img src={props.avatar} className={s.avatar}/>
-            <div className={s.content}>
-                <h6 className={s.name} > {props.name} </h6>
-                <p> {props.message}</p>
-                <p>{props.time}</p>
-            </div>
+            <div className={s.corner}></div>
+                <div className={s.content}>
+                    <div className={s.name}> {props.name} </div>
+                    <div className={s.text}> {props.message}</div>
+                    <div className={s.time}>{props.time}</div>
+                </div>
         </div>
     )
 }
