@@ -13,11 +13,11 @@ export type FilterType = 'all' | AffairPriorityType
 
 // constants
 const defaultAffairs: Array<AffairType> = [
-    {_id: 1, name: 'React', priority: 'high'},
-    {_id: 2, name: 'anime', priority: 'low'},
-    {_id: 3, name: 'games', priority: 'low'},
-    {_id: 4, name: 'work', priority: 'high'},
-    {_id: 5, name: 'html & css', priority: 'middle'},
+    {_id: 1, name: 'React ', priority: 'high'},
+    {_id: 2, name: 'anime ', priority: 'low'},
+    {_id: 3, name: 'games ', priority: 'low'},
+    {_id: 4, name: 'work ', priority: 'high'},
+    {_id: 5, name: 'html & css ', priority: 'middle'},
 ]
 
 // pure helper functions
@@ -31,13 +31,15 @@ export const filterAffairs = (affairs: AffairType[], filter: FilterType): Affair
     } else if (filter === 'high') {
         return affairs.filter(f => f.priority === 'high')
     } else {
-        return []
+        return affairs
     }
 
 
 }
-export const deleteAffair = (affairs: AffairType[], _id: number): any => { // need to fix any
-    return
+export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => { // need to fix any
+    return (
+        affairs.filter(f=> f._id !== _id)
+    )
 }
 
 function HW2() {

@@ -2,11 +2,13 @@ import React from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
 
+
 type AffairsPropsType = { // need to fix any
     data: AffairType[]
     setFilter: (filter: FilterType) => void
-    deleteAffairCallback: any
+    deleteAffairCallback: ( _id: number) => void
 }
+
 
 function Affairs(props: AffairsPropsType) {
     const mappedAffairs = props.data.map((a: AffairType) => (
@@ -17,10 +19,12 @@ function Affairs(props: AffairsPropsType) {
         />
     ))
 
-    const setAll = () => {} // need to fix
-    const setHigh = () => {}
-    const setMiddle = () => {}
-    const setLow = () => {}
+    const{setFilter} = props
+
+    const setAll = () => {setFilter('all')} // need to fix
+    const setHigh = () => {setFilter('high')}
+    const setMiddle = () => {setFilter('middle')}
+    const setLow = () => {setFilter('low')}
 
     return (
         <div>
