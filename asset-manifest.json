@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/it-incubator-ignat-homeworks/static/css/main.279607d4.css",
+    "main.js": "/it-incubator-ignat-homeworks/static/js/main.722aab16.js",
+    "index.html": "/it-incubator-ignat-homeworks/index.html",
+    "main.279607d4.css.map": "/it-incubator-ignat-homeworks/static/css/main.279607d4.css.map",
+    "main.722aab16.js.map": "/it-incubator-ignat-homeworks/static/js/main.722aab16.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.279607d4.css",
+    "static/js/main.722aab16.js"
+  ]
+}
