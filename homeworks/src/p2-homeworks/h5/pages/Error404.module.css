@@ -1,0 +1,10 @@
+.page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page h2, h3 {
+    margin: 10px;
+    font-size: 50px;
+}

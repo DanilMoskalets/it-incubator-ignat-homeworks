@@ -1,0 +1,29 @@
+.menu {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    transform: translateX(-170px);
+}
+.menu:hover{
+        transform: translateX(0px);
+}
+
+.btn {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+}
+
+.nav {
+    display: flex;
+}
+
+.navLink {
+    text-decoration: none;
+    margin-right: 3%;
+}
+
+.navLink:hover{
+    color: red;
+}

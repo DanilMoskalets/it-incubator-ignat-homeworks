@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
-import Routes from './Routes'
-import {HashRouter} from "react-router-dom";
+import Routers from './Routes'
+import {HashRouter, Router} from "react-router-dom";
 
 function HW5() {
     return (
@@ -11,7 +11,7 @@ function HW5() {
 
             <Header/>
 
-            <Routes/>
+            <Routers/>
 
             </HashRouter>
         </div>
