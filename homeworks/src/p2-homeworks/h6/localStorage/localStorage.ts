@@ -3,6 +3,7 @@
 export function saveState<T>(key: string, state: T) {
     const stateAsString = JSON.stringify(state)
     localStorage.setItem(key, stateAsString)
+    return stateAsString
 }
 
 // и вот вам функция для получения сохранённого объекта в памяти браузера:
