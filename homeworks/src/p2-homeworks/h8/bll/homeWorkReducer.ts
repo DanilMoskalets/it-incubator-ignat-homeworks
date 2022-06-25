@@ -7,8 +7,7 @@ export type sortTypeAT = {
 
 
 export type sortAge = {
-    type: 'CHECK-AGE'
-    payload: number
+    type: 'SORT-AGE'
 }
 
 type defaultAction = sortTypeAT |  sortAge
@@ -27,7 +26,7 @@ export const homeWorkReducer = (state: UserType[], action: defaultAction): UserT
                 }
             })
             return action.payload === 'up' ?  copyState : copyState.reverse()
-        case "CHECK-AGE":
+        case "SORT-AGE":
             return [...state].filter( s => s.age >= 18)
         default:
             return state
