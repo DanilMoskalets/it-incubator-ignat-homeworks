@@ -13,7 +13,7 @@
     padding: 5px 20px;
     border-radius: 2px;
     background: rgb(26, 42, 220);
-    box-shadow: 0 -5px rgb(12, 31, 134) inset;
+    box-shadow: 0 -5px rgba(12, 31, 134, 0.78) inset;
     transition: 0.5s;
 }
 
